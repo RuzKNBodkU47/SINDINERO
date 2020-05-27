@@ -1,48 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>Registro</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Inicio</title>
-	<link rel="stylesheet" type="text/css" href="css/registro.css">
-	<link rel="stylesheet" type="text/css" href="css/menu.css">
-	<link rel="stylesheet" type="text/css" href="css/header.css">
+		<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="css/formulario.css">
 </head>
 <body>
-	<header>
-			<nav class="Navegacion">
-		 	<ul class="menu">
-		 		<li><a href="">Inicio</a></li>
-		 		<li><a href="Inicio.php/.about_us">Acerca de nosotros</a></li>
-		 		<li><a href="login.php">Iniciar Sesión</a></li>
-		 	</ul>
-			 </nav>
-		<div class="contenido">
-		 	<div class="texto_header">
-		 		<br>
-		 		<h1>Sin dinero</h1>
-		 		<br>
-		 		<p align="justify">
-		 			Bienvenidos a Sin Dinero, la aplicación web para estudiantes y al público en general, que permitirá al usuario realizar deliciosas recetas con un mínimo presupuesto.
-		 		</p>
-		 		<br>
-		 		<br>
-		 		<a href="Registro.php">Registrate</a>
-		 	</div> 
-		 	<div class="Image">
-		 			<img src="img/chef.svg">
-		 	</div>
-		 </div>
-	</header>
+	<section class="form-Register" >
+		<h4>Formulario de Registro</h4>
+		<form  class="form-horizontal" method="POST">
+		
+		<input class="controls" type="text" name="email" placeholder="Email">
+		<input class="controls"type="text" name="name" placeholder="Nombre ">
+		<input class="controls" type="text" name="apellido_p" placeholder="Apeliido_paterno">
+		<input class="controls" type="text" name="apellido_m" placeholder="Apellido_materno">
+		<input class="controls"type="password" name="pass" placeholder="Contraseña">
+		<input type="submit" name="register" class="btn btn-primary">
+		<a href="login.php">¿Ya tienes una cuenta?</a>
+		
+		</form>
+		</section>
 
+
+<?php 
+	include 'registrar.php';
+?>
 	
-	<section id="Abous_us">
-		<div class="context">
-			<h2>Sobre nosotros</h2>
-			<p align="justify">
-				Somos un grupo de compañeros y amigos que localizamos la necesidad de estudiantes y personas que contamos de un ingreso justo y queremos cambiar hábitos de alimentación para un estilo de vida sano. 
-			</p>
-		</div>
-		<img src="img/programer.svg">
-	</section>
 </body>
 </html>
